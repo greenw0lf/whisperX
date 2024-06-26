@@ -60,6 +60,8 @@ class WhisperModel(faster_whisper.WhisperModel):
                 suppress_blank=options.suppress_blank,
                 suppress_tokens=options.suppress_tokens,
             )
+        
+        print(result)
 
         tokens_batch = [x.sequences_ids[0] for x in result]
 
