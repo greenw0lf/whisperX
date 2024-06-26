@@ -223,6 +223,7 @@ class FasterWhisperPipeline(Pipeline):
             text = out['text']
             if batch_size in [0, 1, None]:
                 text = text[0]
+            print(vad_segments[idx])
             segments.append(
                 {
                     "text": text,
@@ -314,9 +315,9 @@ def load_model(whisper_arch,
         "prefix": None,
         "suppress_blank": True,
         "suppress_tokens": [-1],
-        "without_timestamps": True,
+        "without_timestamps": False,
         "max_initial_timestamp": 0.0,
-        "word_timestamps": False,
+        "word_timestamps": True,
         "prepend_punctuations": "\"'“¿([{-",
         "append_punctuations": "\"'.。,，!！?？:：”)]}、",
         "suppress_numerals": False,
