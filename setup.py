@@ -5,8 +5,8 @@ import pkg_resources
 from setuptools import find_packages, setup
 
 setup(
-    name="whisperx-greenw0lf",
-    py_modules=["whisperx-greenw0lf"],
+    name="whisperx_greenw0lf",
+    py_modules=["whisperx_greenw0lf"],
     version="3.1.1",
     description="Time-Accurate Automatic Speech Recognition using Whisper.",
     readme="README.md",
