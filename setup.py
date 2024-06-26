@@ -7,7 +7,6 @@ from setuptools import find_packages, setup
 setup(
     name="whisperx_greenw0lf",
     py_modules=["whisperx_greenw0lf"],
-    version="1.0.1",
     description="Time-Accurate Automatic Speech Recognition using Whisper.",
     readme="README.md",
     python_requires=">=3.8",

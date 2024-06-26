@@ -220,6 +220,7 @@ class FasterWhisperPipeline(Pipeline):
                 base_progress = ((idx + 1) / total_segments) * 100
                 percent_complete = base_progress / 2 if combined_progress else base_progress
                 print(f"Progress: {percent_complete:.2f}%...")
+            print(out)
             text = out['text']
             if batch_size in [0, 1, None]:
                 text = text[0]
